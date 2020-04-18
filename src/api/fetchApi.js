@@ -25,9 +25,10 @@ export const fetchData = async () => {
             // barpeta: [response['Assam']['districtData']['Barpeta']['confirmed']],
             //Manipur
             imphalwest: [response['Manipur']['districtData']['Imphal West']['confirmed']],
-            unknown: [response['Manipur']['districtData']['Unknown']['confirmed']],
+            imphaleast: [response['Manipur']['districtData']['Imphal East']['confirmed']],
             //Meghalaya
             eastkhasi: [response['Meghalaya']['districtData']['East Khasi Hills']['confirmed']],
+            unknown: [response['Meghalaya']['districtData']['Unknown']['confirmed']],
             //Mizoram
             aizawl: [response['Mizoram']['districtData']['Aizawl']['confirmed']],
             //Nagaland

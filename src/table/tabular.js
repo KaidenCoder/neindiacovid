@@ -26,8 +26,8 @@ const Tabular = () => {
         + parseInt(fetchedState.salmara) + parseInt(fetchedState.kamrup) + parseInt(fetchedState.morigaon)
         + parseInt(fetchedState.golaghat) + parseInt(fetchedState.lakhimpur) + parseInt(fetchedState.dhubri)
         + parseInt(fetchedState.hailakandi)
-    const manipurTotal = parseInt(fetchedState.imphalwest) + parseInt(fetchedState.unknown)
-    const meghalayaTotal = parseInt(fetchedState.eastkhasi)
+    const manipurTotal = parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast)
+    const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.unknown)
     const mizoramTotal = parseInt(fetchedState.aizawl)
     const nagalandTotal = parseInt(fetchedState.dimapur)
     const tripuraTotal = parseInt(fetchedState.gomati) + parseInt(fetchedState.northtripura)
@@ -176,9 +176,9 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
-                                    Unknown
+                                    Imphal East
                                 </TableCell>
-                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.unknown}</TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.imphaleast}</TableCell>
                             </TableRow>
                         </TableBody>
 
@@ -196,6 +196,12 @@ const Tabular = () => {
                                     East Khasi Hills
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.eastkhasi}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Unknown
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.unknown}</TableCell>
                             </TableRow>
                         </TableBody>
 
