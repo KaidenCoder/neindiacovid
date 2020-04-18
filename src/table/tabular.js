@@ -45,7 +45,7 @@ const Tabular = () => {
                      </div>
                     <div className="card-body">
                         <h5 className="card-title">Infected Cases</h5>
-                        <p className="card-text">{total}</p>
+                        <p className="card-text">{total || "Loading..."}</p>
                         <a href="https://covidindiastats.netlify.app/" className="btn btn-primary">Find More</a>
                     </div>
                 </div>
