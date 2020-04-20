@@ -29,10 +29,10 @@ const Tabular = () => {
     const manipurTotal = parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast)
     const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.unknown)
     const mizoramTotal = parseInt(fetchedState.aizawl)
-    const nagalandTotal = parseInt(fetchedState.dimapur)
+    // const nagalandTotal = parseInt(fetchedState.dimapur)
     const tripuraTotal = parseInt(fetchedState.gomati) + parseInt(fetchedState.northtripura)
 
-    const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal + nagalandTotal
+    const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal
         + tripuraTotal
 
     return (
@@ -223,13 +223,13 @@ const Tabular = () => {
                         </TableBody>
 
                         {/* NAGALAND */}
-                        <TableHead>
+                        {/* <TableHead>
                             <TableRow>
                                 <TableCell className="alert-secondary">Nagaland Districts</TableCell>
                                 <TableCell className="alert-warning" align="right">Infected</TableCell>
                             </TableRow>
                         </TableHead>
-                        {/* Tabular data displaying data from all states of NE-India */}
+              
                         <TableBody>
                             <TableRow>
                                 <TableCell component="th" scope="row">
@@ -237,7 +237,7 @@ const Tabular = () => {
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.dimapur}</TableCell>
                             </TableRow>
-                        </TableBody>
+                        </TableBody> */}
 
                         {/* TRIPURA */}
                         <TableHead>

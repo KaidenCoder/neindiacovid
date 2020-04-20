@@ -32,7 +32,7 @@ export const fetchData = async () => {
             //Mizoram
             aizawl: [response['Mizoram']['districtData']['Aizawl']['confirmed']],
             //Nagaland
-            dimapur: [response['Nagaland']['districtData']['Dimapur']['confirmed']],
+            // dimapur: [response['Nagaland']['districtData']['Dimapur']['confirmed']],
             //Tripura
             gomati: [response['Tripura']['districtData']['Gomati']['confirmed']],
             northtripura: [response['Tripura']['districtData']['North Tripura']['confirmed']],
