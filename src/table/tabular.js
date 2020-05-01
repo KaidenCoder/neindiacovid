@@ -41,16 +41,17 @@ const Tabular = () => {
         <>
 
             <div className="container">
-                <div className="card">
+                <div className="card" style={{}}>
                     <div className="card-header" style={{ background: 'rgba(255, 241, 194, 0.5)' }}>
                         Total Confirmed Cases in North East
-                     </div>
+                    </div>
                     <div className="card-body">
-                        <h5 className="card-title text-center" >Confirmed Cases</h5>
+                        <h5 className="card-title text-center" style={{ color: 'rgba(0, 0, 0, 0.54)', fontFamily: "Arial", fontSize: '20px' }}>Total Confirmed Cases</h5>
                         {/* style={{ color: 'rgba(0, 0, 0, 0.5)' }} */}
-                        <p className="card-text text-center">{total || "Loading..."}</p>
+                        <h5 className="card-text text-center">{total || "Loading..."}</h5>
+                        <br></br>
                         {/* <h6 style={{ textAlign: 'center' }} > <button type="button" className="btn btn-light"><span style={{ color: 'rgb(0,0,0,0.4)' }}>Check Total India Cases</span><a href="https://covidindiastats.netlify.app/"> (Link)</a></button></h6> */}
-                        <p className="text-center"><a href="https://covidindiastats.netlify.app/" className="btn btn-primary ">Find More</a></p>
+                        <p className="text-center"><a href="https://covidindiastats.netlify.app/" className="btn btn-primary ">Read More</a></p>
                     </div>
                     <div className="card-header" style={{ background: 'rgba(255, 241, 194, 0.5)' }}>
 
