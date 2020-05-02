@@ -225,7 +225,7 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
-                                    South Salmara Mancachar
+                                    South Salmara Mankachar
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.salmara}</TableCell>
                                 <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.salmaraactive}</TableCell>
