@@ -78,12 +78,15 @@ const Summary = () => {
   const mizoramDeaths = parseInt(fetchedState.aizawldeceased);
   // const nagalandTotal = parseInt(fetchedState.dimapur)
   const tripuraActive =
+    parseInt(fetchedState.dhalaiactive) +
     parseInt(fetchedState.gomatiactive) +
     parseInt(fetchedState.northtripuraactive);
   const tripuraRecovered =
+    parseInt(fetchedState.dhalairecovered) +
     parseInt(fetchedState.gomatirecovered) +
     parseInt(fetchedState.northtripurarecovered);
   const tripuraDeaths =
+    parseInt(fetchedState.dhalaideceased) +
     parseInt(fetchedState.gomatideceased) +
     parseInt(fetchedState.northtripuradeceased);
 

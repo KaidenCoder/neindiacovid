@@ -31,7 +31,7 @@ const Tabular = () => {
     const meghalayaTotal = parseInt(fetchedState.eastkhasi)
     const mizoramTotal = parseInt(fetchedState.aizawl)
     // const nagalandTotal = parseInt(fetchedState.dimapur)
-    const tripuraTotal = parseInt(fetchedState.gomati) + parseInt(fetchedState.northtripura)
+    const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati) + parseInt(fetchedState.northtripura)
 
     const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal
         + tripuraTotal
@@ -370,6 +370,16 @@ const Tabular = () => {
                         </TableHead>
                         {/* Tabular data displaying data from all states of NE-India */}
                         <TableBody>
+                            <TableRow>
+                                <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
+                                    Dhalai
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.dhalai}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.dhalaiactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.dhalaideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.dhalairecovered}</TableCell>
+                            </TableRow>
                             <TableRow>
                                 <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
                                     Gomati

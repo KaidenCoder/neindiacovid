@@ -96,6 +96,10 @@ export const fetchData = async () => {
             //Nagaland
             // dimapur: [response['Nagaland']['districtData']['Dimapur']['confirmed']],
             //Tripura
+            dhalai: [response['Tripura']['districtData']['Dhalai']['confirmed']],
+            dhalaiactive: [response['Tripura']['districtData']['Dhalai']['active']],
+            dhalaideceased: [response['Tripura']['districtData']['Dhalai']['deceased']],
+            dhalairecovered: [response['Tripura']['districtData']['Dhalai']['recovered']],
             gomati: [response['Tripura']['districtData']['Gomati']['confirmed']],
             gomatiactive: [response['Tripura']['districtData']['Gomati']['active']],
             gomatideceased: [response['Tripura']['districtData']['Gomati']['deceased']],
