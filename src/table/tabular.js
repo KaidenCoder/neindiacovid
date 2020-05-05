@@ -22,39 +22,26 @@ const Tabular = () => {
         fetchAPIState()
     }, [])
     const arunachalTotal = parseInt(fetchedState.lohit)
-    console.log("Arunachal " + arunachalTotal)
+
     const assamTotal = parseInt(fetchedState.bongaigaon) + parseInt(fetchedState.cachar) + parseInt(fetchedState.dhubri)
         + parseInt(fetchedState.goalpara) + parseInt(fetchedState.golaghat) + parseInt(fetchedState.hailakandi)
-        + parseInt(fetchedState.kamrup) + parseInt(fetchedState.karimganj) + parseInt(fetchedState.kamrupmetro) + parseInt(fetchedState.lakhimpur)
-        + parseInt(fetchedState.morigaon) + parseInt(fetchedState.nalbari)
+        + parseInt(fetchedState.kamrup) + parseInt(fetchedState.karimganj) + parseInt(fetchedState.kamrupmetro) + parseInt(fetchedState.kokrajhar) +
+        + parseInt(fetchedState.lakhimpur) + parseInt(fetchedState.morigaon) + parseInt(fetchedState.nalbari)
         + parseInt(fetchedState.salmara) + parseInt(fetchedState.unknownassam)
-    console.log("Bongaigaon " + fetchedState.bongaigaon)
-    console.log("Cachar " + fetchedState.cachar)
-    console.log("Dhubri " + fetchedState.dhubri)
-    console.log("Goalpara " + fetchedState.goalpara)
-    console.log("Goalaghat " + fetchedState.golaghat)
-    console.log("Hailakandi " + fetchedState.hailakandi)
-    console.log("Kamrup " + fetchedState.kamrup)
-    console.log("Kamrup Metro " + fetchedState.kamrupmetro)
-    console.log("Lakhimpur " + fetchedState.lakhimpur)
-    console.log("Morigaon " + fetchedState.morigaon)
-    console.log("Nalbari " + fetchedState.nalbari)
-    console.log("Salmara " + fetchedState.salmara)
-    console.log("Other State " + fetchedState.unknownassam)
-    console.log("Assam " + assamTotal)
+
     const manipurTotal = parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast)
-    console.log("Manipur " + manipurTotal)
+
     const meghalayaTotal = parseInt(fetchedState.eastkhasi)
-    console.log("Meghalaya " + meghalayaTotal)
+
     const mizoramTotal = parseInt(fetchedState.aizawl)
-    console.log("Mizoram " + mizoramTotal)
+
     // const nagalandTotal = parseInt(fetchedState.dimapur)
     const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati) + parseInt(fetchedState.northtripura)
-    console.log("Tripura " + tripuraTotal)
+
     const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal
         + tripuraTotal
 
-    console.log(total)
+
 
     return (
 
@@ -212,6 +199,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.karimganjdeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.karimganjrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Kokrajhar
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.kokrajhar}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.kokrajharactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.kokrajhardeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.kokrajharrecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
