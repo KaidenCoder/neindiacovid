@@ -28,6 +28,7 @@ const Summary = () => {
     parseInt(fetchedState.hailakandiactive) +
     parseInt(fetchedState.kamrupactive) +
     parseInt(fetchedState.kamrupmetroactive) +
+    parseInt(fetchedState.karimganj) +
     parseInt(fetchedState.lakhimpuractive) +
     parseInt(fetchedState.morigaonactive) +
     parseInt(fetchedState.nalbariactive) +
@@ -42,6 +43,7 @@ const Summary = () => {
     parseInt(fetchedState.hailakandirecovered) +
     parseInt(fetchedState.kamruprecovered) +
     parseInt(fetchedState.kamrupmetrorecovered) +
+    parseInt(fetchedState.karimganjrecovered) +
     parseInt(fetchedState.lakhimpurrecovered) +
     parseInt(fetchedState.morigaonrecovered) +
     parseInt(fetchedState.nalbarirecovered) +
@@ -56,6 +58,7 @@ const Summary = () => {
     parseInt(fetchedState.hailakandideceased) +
     parseInt(fetchedState.kamrupdeceased) +
     parseInt(fetchedState.kamrupmetrodeceased) +
+    parseInt(fetchedState.karimganjdeceased) +
     parseInt(fetchedState.lakhimpurdeceased) +
     parseInt(fetchedState.morigaondeceased) +
     parseInt(fetchedState.nalbarideceased) +
