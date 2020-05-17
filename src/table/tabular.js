@@ -27,7 +27,7 @@ const Tabular = () => {
         + parseInt(fetchedState.goalpara) + parseInt(fetchedState.golaghat) + parseInt(fetchedState.hailakandi) + parseInt(fetchedState.jorhat)
         + parseInt(fetchedState.kamrup) + parseInt(fetchedState.karimganj) + parseInt(fetchedState.kamrupmetro) + parseInt(fetchedState.kokrajhar) +
         + parseInt(fetchedState.lakhimpur) + parseInt(fetchedState.morigaon) + parseInt(fetchedState.nalbari)
-        + parseInt(fetchedState.salmara) + parseInt(fetchedState.sonitpur)
+        + parseInt(fetchedState.salmara) + parseInt(fetchedState.sivasagar) + parseInt(fetchedState.sonitpur)
         + parseInt(fetchedState.unknownassam)
 
     const manipurTotal = parseInt(fetchedState.churachandpur) + parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast)
