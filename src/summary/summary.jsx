@@ -35,6 +35,8 @@ const Summary = () => {
     parseInt(fetchedState.morigaonactive) +
     parseInt(fetchedState.nalbariactive) +
     parseInt(fetchedState.salmaraactive) +
+    parseInt(fetchedState.sivasagaractive) +
+    parseInt(fetchedState.sonitpuractive) +
     parseInt(fetchedState.unknownassamactive);
   const assamRecovered =
     parseInt(fetchedState.bongaigaonrecovered) +
@@ -52,6 +54,8 @@ const Summary = () => {
     parseInt(fetchedState.morigaonrecovered) +
     parseInt(fetchedState.nalbarirecovered) +
     parseInt(fetchedState.salmararecovered) +
+    parseInt(fetchedState.sivasagarrecovered) +
+    parseInt(fetchedState.sonitpurrecovered) +
     parseInt(fetchedState.unknownassamrecovered);
   const assamDeaths =
     parseInt(fetchedState.bongaigaondeceased) +
@@ -69,14 +73,19 @@ const Summary = () => {
     parseInt(fetchedState.morigaondeceased) +
     parseInt(fetchedState.nalbarideceased) +
     parseInt(fetchedState.salmaradeceased) +
+    parseInt(fetchedState.sivasagardeceased) +
+    parseInt(fetchedState.sonitpurdeceased) +
     parseInt(fetchedState.unknownassamdeceased);
   const manipurActive =
+    parseInt(fetchedState.churachandpuractive) +
     parseInt(fetchedState.imphalwestactive) +
     parseInt(fetchedState.imphaleastactive);
   const manipurRecovered =
+    parseInt(fetchedState.churachandpurrecovered) +
     parseInt(fetchedState.imphalwestrecovered) +
     parseInt(fetchedState.imphaleastrecovered);
   const manipurDeaths =
+    parseInt(fetchedState.churachandpurdeceased) +
     parseInt(fetchedState.imphalwestdeceased) +
     parseInt(fetchedState.imphaleastdeceased);
   const meghalayaActive = parseInt(fetchedState.eastkhasiactive);
@@ -89,14 +98,17 @@ const Summary = () => {
   const tripuraActive =
     parseInt(fetchedState.dhalaiactive) +
     parseInt(fetchedState.gomatiactive) +
+    parseInt(fetchedState.khowaiactive) +
     parseInt(fetchedState.northtripuraactive);
   const tripuraRecovered =
     parseInt(fetchedState.dhalairecovered) +
     parseInt(fetchedState.gomatirecovered) +
+    parseInt(fetchedState.khowairecovered) +
     parseInt(fetchedState.northtripurarecovered);
   const tripuraDeaths =
     parseInt(fetchedState.dhalaideceased) +
     parseInt(fetchedState.gomatideceased) +
+    parseInt(fetchedState.khowaideceased) +
     parseInt(fetchedState.northtripuradeceased);
 
   const active =

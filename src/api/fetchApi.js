@@ -1,5 +1,17 @@
 const url = 'https://api.covid19india.org/state_district_wise.json'
 
+export const fetchDistricts = async () => {
+    try {
+        const response = await (await fetch(url)).json();
+        const modifiedData = {
+            arunachal: [response['Arunachal Pradesh']]
+        }
+        return modifiedData
+    } catch (error) {
+
+    }
+}
+
 export const fetchData = async () => {
     try {
         const response = await (await fetch(url)).json();
@@ -73,12 +85,24 @@ export const fetchData = async () => {
             salmaraactive: [response['Assam']['districtData']['South Salmara Mankachar']['active']],
             salmaradeceased: [response['Assam']['districtData']['South Salmara Mankachar']['deceased']],
             salmararecovered: [response['Assam']['districtData']['South Salmara Mankachar']['recovered']],
+            sivasagar: [response['Assam']['districtData']['Sivasagar']['confirmed']],
+            sivasagaractive: [response['Assam']['districtData']['Sivasagar']['active']],
+            sivasagardeceased: [response['Assam']['districtData']['Sivasagar']['deceased']],
+            sivasagarrecovered: [response['Assam']['districtData']['Sivasagar']['recovered']],
+            sonitpur: [response['Assam']['districtData']['Sonitpur']['confirmed']],
+            sonitpuractive: [response['Assam']['districtData']['Sonitpur']['active']],
+            sonitpurdeceased: [response['Assam']['districtData']['Sonitpur']['deceased']],
+            sonitpurrecovered: [response['Assam']['districtData']['Sonitpur']['recovered']],
             unknownassam: [response['Assam']['districtData']['Other State']['confirmed']],
             unknownassamactive: [response['Assam']['districtData']['Other State']['active']],
             unknownassamdeceased: [response['Assam']['districtData']['Other State']['deceased']],
             unknownassamrecovered: [response['Assam']['districtData']['Other State']['recovered']],
             // barpeta: [response['Assam']['districtData']['Barpeta']['confirmed']],
             //Manipur
+            churachandpur: [response['Manipur']['districtData']['Churachandpur']['confirmed']],
+            churachandpuractive: [response['Manipur']['districtData']['Churachandpur']['active']],
+            churachandpurdeceased: [response['Manipur']['districtData']['Churachandpur']['deceased']],
+            churachandpurrecovered: [response['Manipur']['districtData']['Churachandpur']['recovered']],
             imphaleast: [response['Manipur']['districtData']['Imphal East']['confirmed']],
             imphaleastactive: [response['Manipur']['districtData']['Imphal East']['active']],
             imphaleastdeceased: [response['Manipur']['districtData']['Imphal East']['deceased']],
@@ -112,6 +136,10 @@ export const fetchData = async () => {
             gomatiactive: [response['Tripura']['districtData']['Gomati']['active']],
             gomatideceased: [response['Tripura']['districtData']['Gomati']['deceased']],
             gomatirecovered: [response['Tripura']['districtData']['Gomati']['recovered']],
+            khowai: [response['Tripura']['districtData']['Khowai']['confirmed']],
+            khowaiactive: [response['Tripura']['districtData']['Khowai']['active']],
+            khowaideceased: [response['Tripura']['districtData']['Khowai']['deceased']],
+            khowairecovered: [response['Tripura']['districtData']['Khowai']['recovered']],
             northtripura: [response['Tripura']['districtData']['North Tripura']['confirmed']],
             northtripuraactive: [response['Tripura']['districtData']['North Tripura']['active']],
             northtripuradeceased: [response['Tripura']['districtData']['North Tripura']['deceased']],

@@ -5,6 +5,7 @@ import './App.css';
 import Tabular from './table/tabular';
 import Summary from './summary/summary';
 
+
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <h6 style={{ textAlign: 'center' }} > <button type="button" className="btn btn-light"><span style={{ color: 'rgb(0,0,0,0.4)' }}>Check Total India Cases</span><a href="https://covidindiastats.netlify.app/"> (Link)</a></button></h6> */}
 
       <Summary />
+
       {<Tabular /> || 'loading...'}
 
 

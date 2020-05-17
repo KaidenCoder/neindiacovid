@@ -27,16 +27,17 @@ const Tabular = () => {
         + parseInt(fetchedState.goalpara) + parseInt(fetchedState.golaghat) + parseInt(fetchedState.hailakandi) + parseInt(fetchedState.jorhat)
         + parseInt(fetchedState.kamrup) + parseInt(fetchedState.karimganj) + parseInt(fetchedState.kamrupmetro) + parseInt(fetchedState.kokrajhar) +
         + parseInt(fetchedState.lakhimpur) + parseInt(fetchedState.morigaon) + parseInt(fetchedState.nalbari)
-        + parseInt(fetchedState.salmara) + parseInt(fetchedState.unknownassam)
+        + parseInt(fetchedState.salmara) + parseInt(fetchedState.sonitpur)
+        + parseInt(fetchedState.unknownassam)
 
-    const manipurTotal = parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast)
+    const manipurTotal = parseInt(fetchedState.churachandpur) + parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast)
 
     const meghalayaTotal = parseInt(fetchedState.eastkhasi)
 
     const mizoramTotal = parseInt(fetchedState.aizawl)
 
     // const nagalandTotal = parseInt(fetchedState.dimapur)
-    const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati) + parseInt(fetchedState.northtripura)
+    const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati) + parseInt(fetchedState.khowai) + parseInt(fetchedState.northtripura)
 
     const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal
         + tripuraTotal
@@ -252,6 +253,26 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Sivasagar
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.sivasagar}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.sivasagaractive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.sivasagardeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.sivasagarrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Sonitpur
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.sonitpur}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.sonitpuractive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.sonitpurdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.sonitpurrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     South Salmara Mankachar
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.salmara}</TableCell>
@@ -285,6 +306,16 @@ const Tabular = () => {
                         </TableHead>
                         {/* Tabular data displaying data from all states of NE-India */}
                         <TableBody>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Churachandpur
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.churachandpur}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.churachandpuractive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.churachandpurdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.churachandpurrecovered}</TableCell>
+                            </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
                                     Imphal East
@@ -416,6 +447,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.gomatideceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.gomatirecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
+                                    Khowai
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.khowai}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.khowaiactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.khowaideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.khowairecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
