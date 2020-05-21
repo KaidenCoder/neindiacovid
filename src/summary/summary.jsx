@@ -23,6 +23,7 @@ const Summary = () => {
     parseInt(fetchedState.biswanathactive) +
     parseInt(fetchedState.bongaigaonactive) +
     parseInt(fetchedState.cacharactive) +
+    parseInt(fetchedState.darrangactive) +
     parseInt(fetchedState.dhubriactive) +
     parseInt(fetchedState.dibrugarhactive) +
     parseInt(fetchedState.goalparaactive) +
@@ -41,11 +42,14 @@ const Summary = () => {
     parseInt(fetchedState.salmaraactive) +
     parseInt(fetchedState.sivasagaractive) +
     parseInt(fetchedState.sonitpuractive) +
+    parseInt(fetchedState.udalguriactive) +
+    parseInt(fetchedState.westkarbiactive) +
     parseInt(fetchedState.unknownassamactive);
   const assamRecovered =
     parseInt(fetchedState.biswanathrecovered) +
     parseInt(fetchedState.bongaigaonrecovered) +
     parseInt(fetchedState.cacharrecovered) +
+    parseInt(fetchedState.darrangrecovered) +
     parseInt(fetchedState.dhubrirecovered) +
     parseInt(fetchedState.dibrugarhrecovered) +
     parseInt(fetchedState.goalpararecovered) +
@@ -64,11 +68,14 @@ const Summary = () => {
     parseInt(fetchedState.salmararecovered) +
     parseInt(fetchedState.sivasagarrecovered) +
     parseInt(fetchedState.sonitpurrecovered) +
+    parseInt(fetchedState.udalgurirecovered) +
+    parseInt(fetchedState.westkarbirecovered) +
     parseInt(fetchedState.unknownassamrecovered);
   const assamDeaths =
     parseInt(fetchedState.biswanathdeceased) +
     parseInt(fetchedState.bongaigaondeceased) +
     parseInt(fetchedState.cachardeceased) +
+    parseInt(fetchedState.darrangdeceased) +
     parseInt(fetchedState.dhubrideceased) +
     parseInt(fetchedState.dibrugarhdeceased) +
     parseInt(fetchedState.goalparadeceased) +
@@ -87,6 +94,8 @@ const Summary = () => {
     parseInt(fetchedState.salmaradeceased) +
     parseInt(fetchedState.sivasagardeceased) +
     parseInt(fetchedState.sonitpurdeceased) +
+    parseInt(fetchedState.udalgurideceased) +
+    parseInt(fetchedState.westkarbideceased) +
     parseInt(fetchedState.unknownassamdeceased);
   const manipurActive =
     parseInt(fetchedState.churachandpuractive) +
@@ -100,9 +109,15 @@ const Summary = () => {
     parseInt(fetchedState.churachandpurdeceased) +
     parseInt(fetchedState.imphalwestdeceased) +
     parseInt(fetchedState.imphaleastdeceased);
-  const meghalayaActive = parseInt(fetchedState.eastkhasiactive);
-  const meghalayaRecovered = parseInt(fetchedState.eastkhasirecovered);
-  const meghalayaDeaths = parseInt(fetchedState.eastkhasideceased);
+  const meghalayaActive =
+    parseInt(fetchedState.eastkhasiactive) +
+    parseInt(fetchedState.westgaroactive);
+  const meghalayaRecovered =
+    parseInt(fetchedState.eastkhasirecovered) +
+    parseInt(fetchedState.westgarorecovered);
+  const meghalayaDeaths =
+    parseInt(fetchedState.eastkhasideceased) +
+    parseInt(fetchedState.westgarodeceased);
   const mizoramActive = parseInt(fetchedState.aizawlactive);
   const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
   const mizoramDeaths = parseInt(fetchedState.aizawldeceased);
