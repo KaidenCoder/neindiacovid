@@ -24,6 +24,7 @@ const Summary = () => {
     parseInt(fetchedState.bongaigaonactive) +
     parseInt(fetchedState.cacharactive) +
     parseInt(fetchedState.dhubriactive) +
+    parseInt(fetchedState.dibrugarhactive) +
     parseInt(fetchedState.goalparaactive) +
     parseInt(fetchedState.golaghatactive) +
     parseInt(fetchedState.hailakandiactive) +
@@ -46,6 +47,7 @@ const Summary = () => {
     parseInt(fetchedState.bongaigaonrecovered) +
     parseInt(fetchedState.cacharrecovered) +
     parseInt(fetchedState.dhubrirecovered) +
+    parseInt(fetchedState.dibrugarhrecovered) +
     parseInt(fetchedState.goalpararecovered) +
     parseInt(fetchedState.golaghatrecovered) +
     parseInt(fetchedState.hailakandirecovered) +
@@ -68,6 +70,7 @@ const Summary = () => {
     parseInt(fetchedState.bongaigaondeceased) +
     parseInt(fetchedState.cachardeceased) +
     parseInt(fetchedState.dhubrideceased) +
+    parseInt(fetchedState.dibrugarhdeceased) +
     parseInt(fetchedState.goalparadeceased) +
     parseInt(fetchedState.golaghatdeceased) +
     parseInt(fetchedState.hailakandideceased) +
