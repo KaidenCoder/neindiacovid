@@ -39,10 +39,15 @@ const Tabular = () => {
     const mizoramTotal = parseInt(fetchedState.aizawl)
 
     // const nagalandTotal = parseInt(fetchedState.dimapur)
-    const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati) + parseInt(fetchedState.khowai) + parseInt(fetchedState.northtripura)
+    const sikkimTotal = parseInt(fetchedState.northsikkim)
+
+    const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati)
+        + parseInt(fetchedState.khowai) + parseInt(fetchedState.northtripura)
+        + parseInt(fetchedState.sipahijala) + parseInt(fetchedState.southtripura)
+        + parseInt(fetchedState.unokoti) + parseInt(fetchedState.westtripura)
 
     const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal
-        + tripuraTotal
+        + sikkimTotal + tripuraTotal
 
 
 
@@ -527,6 +532,29 @@ const Tabular = () => {
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.dimapur}</TableCell>
                             </TableRow>
                         </TableBody> */}
+                        {/* SIKKIM */}
+                        <TableHead>
+                            <TableRow>
+                                <TableCell className="alert alert-secondary">Sikkim Districts</TableCell>
+                                <TableCell className="alert alert-warning" align="right">Confirmed</TableCell>
+                                <TableCell className="alert alert-info" align="right">Active</TableCell>
+
+                                <TableCell className="alert alert-danger" align="right">Deceased</TableCell>
+                                <TableCell className="alert alert-success" align="right">Recovered</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    North Sikkim
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.northsikkim}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.northsikkimactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.northsikkimdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.northsikkimrecovered}</TableCell>
+                            </TableRow>
+                        </TableBody>
 
                         {/* TRIPURA */}
                         <TableHead>
@@ -580,6 +608,46 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.northtripuradeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.northtripurarecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
+                                    Sipahijala
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.sipahijala}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.sipahijalaactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.sipahijaladeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.sipahijalarecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
+                                    South Tripura
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.southtripura}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.southtripuraactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.southtripuradeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.southtripurarecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
+                                    Unokoti
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.unokoti}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.unokotiactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.unokotideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.unokotirecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell style={{ background: 'rgba(204, 207, 208, 0.1)' }} component="th" scope="row">
+                                    West Tripura
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.westtripura}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.westtripuraactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.westtripuradeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.westtripurarecovered}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>

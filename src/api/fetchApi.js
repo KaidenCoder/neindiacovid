@@ -175,6 +175,11 @@ export const fetchData = async () => {
             aizawlrecovered: [response['Mizoram']['districtData']['Aizawl']['recovered']],
             //Nagaland
             // dimapur: [response['Nagaland']['districtData']['Dimapur']['confirmed']],
+            //Sikkim
+            northsikkim: [response['Sikkim']['districtData']['North Sikkim']['confirmed']],
+            northsikkimactive: [response['Sikkim']['districtData']['North Sikkim']['active']],
+            northsikkimdeceased: [response['Sikkim']['districtData']['North Sikkim']['deceased']],
+            northsikkimrecovered: [response['Sikkim']['districtData']['North Sikkim']['recovered']],
             //Tripura
             dhalai: [response['Tripura']['districtData']['Dhalai']['confirmed']],
             dhalaiactive: [response['Tripura']['districtData']['Dhalai']['active']],
@@ -192,6 +197,22 @@ export const fetchData = async () => {
             northtripuraactive: [response['Tripura']['districtData']['North Tripura']['active']],
             northtripuradeceased: [response['Tripura']['districtData']['North Tripura']['deceased']],
             northtripurarecovered: [response['Tripura']['districtData']['North Tripura']['recovered']],
+            sipahijala: [response['Tripura']['districtData']['Sipahijala']['confirmed']],
+            sipahijalaactive: [response['Tripura']['districtData']['Sipahijala']['active']],
+            sipahijaladeceased: [response['Tripura']['districtData']['Sipahijala']['deceased']],
+            sipahijalarecovered: [response['Tripura']['districtData']['Sipahijala']['recovered']],
+            southtripura: [response['Tripura']['districtData']['South Tripura']['confirmed']],
+            southtripuraactive: [response['Tripura']['districtData']['South Tripura']['active']],
+            southtripuradeceased: [response['Tripura']['districtData']['South Tripura']['deceased']],
+            southtripurarecovered: [response['Tripura']['districtData']['South Tripura']['recovered']],
+            unokoti: [response['Tripura']['districtData']['Unokoti']['confirmed']],
+            unokotiactive: [response['Tripura']['districtData']['Unokoti']['active']],
+            unokotideceased: [response['Tripura']['districtData']['Unokoti']['deceased']],
+            unokotirecovered: [response['Tripura']['districtData']['Unokoti']['recovered']],
+            westtripura: [response['Tripura']['districtData']['West Tripura']['confirmed']],
+            westtripuraactive: [response['Tripura']['districtData']['West Tripura']['active']],
+            westtripuradeceased: [response['Tripura']['districtData']['West Tripura']['deceased']],
+            westtripurarecovered: [response['Tripura']['districtData']['West Tripura']['recovered']],
         }
         return modifiedData
     } catch (error) {

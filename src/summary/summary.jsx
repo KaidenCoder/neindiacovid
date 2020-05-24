@@ -134,21 +134,36 @@ const Summary = () => {
   const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
   const mizoramDeaths = parseInt(fetchedState.aizawldeceased);
   // const nagalandTotal = parseInt(fetchedState.dimapur)
+  const sikkimActive = parseInt(fetchedState.northsikkimactive);
+  const sikkimRecovered = parseInt(fetchedState.northsikkimrecovered);
+  const sikkimDeaths = parseInt(fetchedState.northsikkimdeceased);
   const tripuraActive =
     parseInt(fetchedState.dhalaiactive) +
     parseInt(fetchedState.gomatiactive) +
     parseInt(fetchedState.khowaiactive) +
-    parseInt(fetchedState.northtripuraactive);
+    parseInt(fetchedState.northtripuraactive) +
+    parseInt(fetchedState.sipahijalaactive) +
+    parseInt(fetchedState.southtripuraactive) +
+    parseInt(fetchedState.unokotiactive) +
+    parseInt(fetchedState.westtripuraactive);
   const tripuraRecovered =
     parseInt(fetchedState.dhalairecovered) +
     parseInt(fetchedState.gomatirecovered) +
     parseInt(fetchedState.khowairecovered) +
-    parseInt(fetchedState.northtripurarecovered);
+    parseInt(fetchedState.northtripurarecovered) +
+    parseInt(fetchedState.sipahijalarecovered) +
+    parseInt(fetchedState.southtripurarecovered) +
+    parseInt(fetchedState.unokotirecovered) +
+    parseInt(fetchedState.westtripurarecovered);
   const tripuraDeaths =
     parseInt(fetchedState.dhalaideceased) +
     parseInt(fetchedState.gomatideceased) +
     parseInt(fetchedState.khowaideceased) +
-    parseInt(fetchedState.northtripuradeceased);
+    parseInt(fetchedState.northtripuradeceased) +
+    parseInt(fetchedState.sipahijaladeceased) +
+    parseInt(fetchedState.southtripuradeceased) +
+    parseInt(fetchedState.unokotideceased) +
+    parseInt(fetchedState.westtripuradeceased);
 
   const active =
     arunachalActive +
@@ -156,6 +171,7 @@ const Summary = () => {
     manipurActive +
     meghalayaActive +
     mizoramActive +
+    sikkimActive +
     tripuraActive;
   const recovered =
     arunachalRecovered +
@@ -163,6 +179,7 @@ const Summary = () => {
     manipurRecovered +
     meghalayaRecovered +
     mizoramRecovered +
+    sikkimRecovered +
     tripuraRecovered;
   const deaths =
     arunachalDeaths +
@@ -170,6 +187,7 @@ const Summary = () => {
     manipurDeaths +
     meghalayaDeaths +
     mizoramDeaths +
+    sikkimDeaths +
     tripuraDeaths;
   //   if (!total) {
   //     return "Loading...";
