@@ -34,7 +34,7 @@ const Tabular = () => {
 
     const manipurTotal = parseInt(fetchedState.churachandpur) + parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast) + parseInt(fetchedState.noney)
 
-    const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.westgaro)
+    const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.northgaro) + parseInt(fetchedState.westgaro)
 
     const mizoramTotal = parseInt(fetchedState.aizawl)
 
@@ -488,6 +488,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.eastkhasideceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.eastkhasirecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    North Garo Hills
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.northgaro}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.northgaroactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.northgarodeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.northgarorecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">

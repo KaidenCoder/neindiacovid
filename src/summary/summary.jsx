@@ -126,12 +126,15 @@ const Summary = () => {
     parseInt(fetchedState.imphaleastdeceased);
   const meghalayaActive =
     parseInt(fetchedState.eastkhasiactive) +
+    parseInt(fetchedState.northgaroactive) +
     parseInt(fetchedState.westgaroactive);
   const meghalayaRecovered =
     parseInt(fetchedState.eastkhasirecovered) +
+    parseInt(fetchedState.northgarorecovered) +
     parseInt(fetchedState.westgarorecovered);
   const meghalayaDeaths =
     parseInt(fetchedState.eastkhasideceased) +
+    parseInt(fetchedState.northgarodeceased) +
     parseInt(fetchedState.westgarodeceased);
   const mizoramActive = parseInt(fetchedState.aizawlactive);
   const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
