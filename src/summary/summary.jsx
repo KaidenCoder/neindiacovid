@@ -112,14 +112,17 @@ const Summary = () => {
   const manipurActive =
     parseInt(fetchedState.churachandpuractive) +
     parseInt(fetchedState.imphalwestactive) +
+    parseInt(fetchedState.noneyactive) +
     parseInt(fetchedState.imphaleastactive);
   const manipurRecovered =
     parseInt(fetchedState.churachandpurrecovered) +
     parseInt(fetchedState.imphalwestrecovered) +
+    parseInt(fetchedState.noneyrecovered) +
     parseInt(fetchedState.imphaleastrecovered);
   const manipurDeaths =
     parseInt(fetchedState.churachandpurdeceased) +
     parseInt(fetchedState.imphalwestdeceased) +
+    parseInt(fetchedState.noneydeceased) +
     parseInt(fetchedState.imphaleastdeceased);
   const meghalayaActive =
     parseInt(fetchedState.eastkhasiactive) +

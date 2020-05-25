@@ -155,6 +155,10 @@ export const fetchData = async () => {
             imphalwestactive: [response['Manipur']['districtData']['Imphal West']['active']],
             imphalwestdeceased: [response['Manipur']['districtData']['Imphal West']['deceased']],
             imphalwestrecovered: [response['Manipur']['districtData']['Imphal West']['recovered']],
+            noney: [response['Manipur']['districtData']['Noney']['confirmed']],
+            noneyactive: [response['Manipur']['districtData']['Noney']['active']],
+            noneydeceased: [response['Manipur']['districtData']['Noney']['deceased']],
+            noneyrecovered: [response['Manipur']['districtData']['Noney']['recovered']],
             //Meghalaya
             eastkhasi: [response['Meghalaya']['districtData']['East Khasi Hills']['confirmed']],
             eastkhasiactive: [response['Meghalaya']['districtData']['East Khasi Hills']['active']],
