@@ -38,7 +38,7 @@ const Tabular = () => {
 
     const mizoramTotal = parseInt(fetchedState.aizawl)
 
-    // const nagalandTotal = parseInt(fetchedState.dimapur)
+    const nagalandTotal = parseInt(fetchedState.dimapur) + parseInt(fetchedState.kohima)
     const sikkimTotal = parseInt(fetchedState.northsikkim)
 
     const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati)
@@ -47,7 +47,7 @@ const Tabular = () => {
         + parseInt(fetchedState.unokoti) + parseInt(fetchedState.westtripura)
 
     const total = arunachalTotal + assamTotal + manipurTotal + meghalayaTotal + mizoramTotal
-        + sikkimTotal + tripuraTotal
+        + nagalandTotal + sikkimTotal + tripuraTotal
 
 
 
@@ -527,21 +527,39 @@ const Tabular = () => {
                         </TableBody>
 
                         {/* NAGALAND */}
-                        {/* <TableHead>
+                        <TableHead>
                             <TableRow>
                                 <TableCell className="alert alert-secondary">Nagaland Districts</TableCell>
-                                <TableCell className="alert alert-warning" align="right">Infected</TableCell>
+                                <TableCell className="alert alert-warning" align="right">Confirmed</TableCell>
+                                <TableCell className="alert alert-info" align="right">Active</TableCell>
+
+                                <TableCell className="alert alert-danger" align="right">Deceased</TableCell>
+                                <TableCell className="alert alert-success" align="right">Recovered</TableCell>
                             </TableRow>
                         </TableHead>
-              
+
                         <TableBody>
                             <TableRow>
                                 <TableCell component="th" scope="row">
                                     Dimapur
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.dimapur}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.dimapuractive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.dimapurdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.dimapurrecovered}</TableCell>
                             </TableRow>
-                        </TableBody> */}
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Kohima
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.kohima}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.kohimaactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.kohimadeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.kohimarecovered}</TableCell>
+                            </TableRow>
+                        </TableBody>
                         {/* SIKKIM */}
                         <TableHead>
                             <TableRow>

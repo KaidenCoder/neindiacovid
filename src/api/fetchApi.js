@@ -177,8 +177,15 @@ export const fetchData = async () => {
             aizawlactive: [response['Mizoram']['districtData']['Aizawl']['active']],
             aizawldeceased: [response['Mizoram']['districtData']['Aizawl']['deceased']],
             aizawlrecovered: [response['Mizoram']['districtData']['Aizawl']['recovered']],
-            //Nagaland
-            // dimapur: [response['Nagaland']['districtData']['Dimapur']['confirmed']],
+            // Nagaland
+            dimapur: [response['Nagaland']['districtData']['Dimapur']['confirmed']],
+            dimapuractive: [response['Nagaland']['districtData']['Dimapur']['active']],
+            dimapurdeceased: [response['Nagaland']['districtData']['Dimapur']['deceased']],
+            dimapurrecovered: [response['Nagaland']['districtData']['Dimapur']['recovered']],
+            kohima: [response['Nagaland']['districtData']['Kohima']['confirmed']],
+            kohimaactive: [response['Nagaland']['districtData']['Kohima']['active']],
+            kohimadeceased: [response['Nagaland']['districtData']['Kohima']['deceased']],
+            kohimarecovered: [response['Nagaland']['districtData']['Kohima']['recovered']],
             //Sikkim
             northsikkim: [response['Sikkim']['districtData']['North Sikkim']['confirmed']],
             northsikkimactive: [response['Sikkim']['districtData']['North Sikkim']['active']],

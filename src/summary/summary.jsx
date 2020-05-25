@@ -136,7 +136,14 @@ const Summary = () => {
   const mizoramActive = parseInt(fetchedState.aizawlactive);
   const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
   const mizoramDeaths = parseInt(fetchedState.aizawldeceased);
-  // const nagalandTotal = parseInt(fetchedState.dimapur)
+  const nagalandActive =
+    parseInt(fetchedState.dimapuractive) + parseInt(fetchedState.kohimaactive);
+  const nagalandRecovered =
+    parseInt(fetchedState.dimapurrecovered) +
+    parseInt(fetchedState.kohimarecovered);
+  const nagalandDeaths =
+    parseInt(fetchedState.dimapurdeceased) +
+    parseInt(fetchedState.kohimadeceased);
   const sikkimActive = parseInt(fetchedState.northsikkimactive);
   const sikkimRecovered = parseInt(fetchedState.northsikkimrecovered);
   const sikkimDeaths = parseInt(fetchedState.northsikkimdeceased);
@@ -174,6 +181,7 @@ const Summary = () => {
     manipurActive +
     meghalayaActive +
     mizoramActive +
+    nagalandActive +
     sikkimActive +
     tripuraActive;
   const recovered =
@@ -182,6 +190,7 @@ const Summary = () => {
     manipurRecovered +
     meghalayaRecovered +
     mizoramRecovered +
+    nagalandRecovered +
     sikkimRecovered +
     tripuraRecovered;
   const deaths =
@@ -190,6 +199,7 @@ const Summary = () => {
     manipurDeaths +
     meghalayaDeaths +
     mizoramDeaths +
+    nagalandDeaths +
     sikkimDeaths +
     tripuraDeaths;
   //   if (!total) {
