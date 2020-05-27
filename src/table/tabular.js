@@ -39,7 +39,7 @@ const Tabular = () => {
     const mizoramTotal = parseInt(fetchedState.aizawl)
 
     const nagalandTotal = parseInt(fetchedState.dimapur) + parseInt(fetchedState.kohima)
-    const sikkimTotal = parseInt(fetchedState.northsikkim)
+    const sikkimTotal = parseInt(fetchedState.southsikkim)
 
     const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati)
         + parseInt(fetchedState.khowai) + parseInt(fetchedState.northtripura)
@@ -584,13 +584,13 @@ const Tabular = () => {
                         <TableBody>
                             <TableRow>
                                 <TableCell component="th" scope="row">
-                                    North Sikkim
+                                    South Sikkim
                                 </TableCell>
-                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.northsikkim}</TableCell>
-                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.northsikkimactive}</TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.southsikkim}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.southsikkimactive}</TableCell>
 
-                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.northsikkimdeceased}</TableCell>
-                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.northsikkimrecovered}</TableCell>
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.southsikkimdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.southsikkimrecovered}</TableCell>
                             </TableRow>
                         </TableBody>
 

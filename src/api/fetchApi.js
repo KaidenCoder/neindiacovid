@@ -191,10 +191,10 @@ export const fetchData = async () => {
             kohimadeceased: [response['Nagaland']['districtData']['Kohima']['deceased']],
             kohimarecovered: [response['Nagaland']['districtData']['Kohima']['recovered']],
             //Sikkim
-            northsikkim: [response['Sikkim']['districtData']['North Sikkim']['confirmed']],
-            northsikkimactive: [response['Sikkim']['districtData']['North Sikkim']['active']],
-            northsikkimdeceased: [response['Sikkim']['districtData']['North Sikkim']['deceased']],
-            northsikkimrecovered: [response['Sikkim']['districtData']['North Sikkim']['recovered']],
+            southsikkim: [response['Sikkim']['districtData']['South Sikkim']['confirmed']],
+            southsikkimactive: [response['Sikkim']['districtData']['South Sikkim']['active']],
+            southsikkimdeceased: [response['Sikkim']['districtData']['South Sikkim']['deceased']],
+            southsikkimrecovered: [response['Sikkim']['districtData']['South Sikkim']['recovered']],
             //Tripura
             dhalai: [response['Tripura']['districtData']['Dhalai']['confirmed']],
             dhalaiactive: [response['Tripura']['districtData']['Dhalai']['active']],

@@ -147,9 +147,9 @@ const Summary = () => {
   const nagalandDeaths =
     parseInt(fetchedState.dimapurdeceased) +
     parseInt(fetchedState.kohimadeceased);
-  const sikkimActive = parseInt(fetchedState.northsikkimactive);
-  const sikkimRecovered = parseInt(fetchedState.northsikkimrecovered);
-  const sikkimDeaths = parseInt(fetchedState.northsikkimdeceased);
+  const sikkimActive = parseInt(fetchedState.southsikkimactive);
+  const sikkimRecovered = parseInt(fetchedState.southsikkimrecovered);
+  const sikkimDeaths = parseInt(fetchedState.southsikkimdeceased);
   const tripuraActive =
     parseInt(fetchedState.dhalaiactive) +
     parseInt(fetchedState.gomatiactive) +
