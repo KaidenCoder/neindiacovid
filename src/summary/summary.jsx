@@ -24,6 +24,7 @@ const Summary = () => {
     parseInt(fetchedState.biswanathactive) +
     parseInt(fetchedState.bongaigaonactive) +
     parseInt(fetchedState.cacharactive) +
+    parseInt(fetchedState.charaideoactive) +
     parseInt(fetchedState.chirangactive) +
     parseInt(fetchedState.darrangactive) +
     parseInt(fetchedState.dhubriactive) +
@@ -36,6 +37,7 @@ const Summary = () => {
     parseInt(fetchedState.jorhatactive) +
     parseInt(fetchedState.kamrupactive) +
     parseInt(fetchedState.kamrupmetroactive) +
+    parseInt(fetchedState.karbianglongactive) +
     parseInt(fetchedState.karimganjactive) +
     parseInt(fetchedState.kokrajharactive) +
     parseInt(fetchedState.lakhimpuractive) +
@@ -54,6 +56,7 @@ const Summary = () => {
     parseInt(fetchedState.biswanathrecovered) +
     parseInt(fetchedState.bongaigaonrecovered) +
     parseInt(fetchedState.cacharrecovered) +
+    parseInt(fetchedState.charaideorecovered) +
     parseInt(fetchedState.chirangrecovered) +
     parseInt(fetchedState.darrangrecovered) +
     parseInt(fetchedState.dhubrirecovered) +
@@ -66,6 +69,7 @@ const Summary = () => {
     parseInt(fetchedState.jorhatrecovered) +
     parseInt(fetchedState.kamruprecovered) +
     parseInt(fetchedState.kamrupmetrorecovered) +
+    parseInt(fetchedState.karbianglongrecovered) +
     parseInt(fetchedState.karimganjrecovered) +
     parseInt(fetchedState.kokrajharrecovered) +
     parseInt(fetchedState.lakhimpurrecovered) +
@@ -84,6 +88,7 @@ const Summary = () => {
     parseInt(fetchedState.biswanathdeceased) +
     parseInt(fetchedState.bongaigaondeceased) +
     parseInt(fetchedState.cachardeceased) +
+    parseInt(fetchedState.charaideodeceased) +
     parseInt(fetchedState.chirangdeceased) +
     parseInt(fetchedState.darrangdeceased) +
     parseInt(fetchedState.dhubrideceased) +
@@ -96,6 +101,7 @@ const Summary = () => {
     parseInt(fetchedState.jorhatdeceased) +
     parseInt(fetchedState.kamrupdeceased) +
     parseInt(fetchedState.kamrupmetrodeceased) +
+    parseInt(fetchedState.karbianglongdeceased) +
     parseInt(fetchedState.karimganjdeceased) +
     parseInt(fetchedState.kokrajhardeceased) +
     parseInt(fetchedState.lakhimpurdeceased) +
@@ -140,13 +146,17 @@ const Summary = () => {
   const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
   const mizoramDeaths = parseInt(fetchedState.aizawldeceased);
   const nagalandActive =
-    parseInt(fetchedState.dimapuractive) + parseInt(fetchedState.kohimaactive);
+    parseInt(fetchedState.dimapuractive) +
+    parseInt(fetchedState.kohimaactive) +
+    parseInt(fetchedState.tuensangactive);
   const nagalandRecovered =
     parseInt(fetchedState.dimapurrecovered) +
-    parseInt(fetchedState.kohimarecovered);
+    parseInt(fetchedState.kohimarecovered) +
+    parseInt(fetchedState.tuensangrecovered);
   const nagalandDeaths =
     parseInt(fetchedState.dimapurdeceased) +
-    parseInt(fetchedState.kohimadeceased);
+    parseInt(fetchedState.kohimadeceased) +
+    parseInt(fetchedState.tuensangdeceased);
   const sikkimActive = parseInt(fetchedState.southsikkimactive);
   const sikkimRecovered = parseInt(fetchedState.southsikkimrecovered);
   const sikkimDeaths = parseInt(fetchedState.southsikkimdeceased);
