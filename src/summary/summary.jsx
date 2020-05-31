@@ -116,16 +116,19 @@ const Summary = () => {
     parseInt(fetchedState.westkarbideceased) +
     parseInt(fetchedState.unknownassamdeceased);
   const manipurActive =
+    parseInt(fetchedState.chandelactive) +
     parseInt(fetchedState.churachandpuractive) +
     parseInt(fetchedState.imphalwestactive) +
     parseInt(fetchedState.noneyactive) +
     parseInt(fetchedState.imphaleastactive);
   const manipurRecovered =
+    parseInt(fetchedState.chandelrecovered) +
     parseInt(fetchedState.churachandpurrecovered) +
     parseInt(fetchedState.imphalwestrecovered) +
     parseInt(fetchedState.noneyrecovered) +
     parseInt(fetchedState.imphaleastrecovered);
   const manipurDeaths =
+    parseInt(fetchedState.chandeldeceased) +
     parseInt(fetchedState.churachandpurdeceased) +
     parseInt(fetchedState.imphalwestdeceased) +
     parseInt(fetchedState.noneydeceased) +
@@ -133,15 +136,21 @@ const Summary = () => {
   const meghalayaActive =
     parseInt(fetchedState.eastkhasiactive) +
     parseInt(fetchedState.northgaroactive) +
-    parseInt(fetchedState.westgaroactive);
+    parseInt(fetchedState.southwestgaroactive) +
+    parseInt(fetchedState.westgaroactive) +
+    parseInt(fetchedState.westkhasiactive);
   const meghalayaRecovered =
     parseInt(fetchedState.eastkhasirecovered) +
     parseInt(fetchedState.northgarorecovered) +
-    parseInt(fetchedState.westgarorecovered);
+    parseInt(fetchedState.southwestgarorecovered) +
+    parseInt(fetchedState.westgarorecovered) +
+    parseInt(fetchedState.westkhasirecovered);
   const meghalayaDeaths =
     parseInt(fetchedState.eastkhasideceased) +
     parseInt(fetchedState.northgarodeceased) +
-    parseInt(fetchedState.westgarodeceased);
+    parseInt(fetchedState.southwestgarodeceased) +
+    parseInt(fetchedState.westgarodeceased) +
+    parseInt(fetchedState.westkhasideceased);
   const mizoramActive = parseInt(fetchedState.aizawlactive);
   const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
   const mizoramDeaths = parseInt(fetchedState.aizawldeceased);

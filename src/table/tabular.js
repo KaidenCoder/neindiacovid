@@ -32,9 +32,9 @@ const Tabular = () => {
         + parseInt(fetchedState.salmara) + parseInt(fetchedState.sivasagar) + parseInt(fetchedState.sonitpur) + parseInt(fetchedState.tinsukia)
         + parseInt(fetchedState.udalguri) + parseInt(fetchedState.westkarbi) + parseInt(fetchedState.unknownassam)
 
-    const manipurTotal = parseInt(fetchedState.churachandpur) + parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast) + parseInt(fetchedState.noney)
+    const manipurTotal = parseInt(fetchedState.chandel) + parseInt(fetchedState.churachandpur) + parseInt(fetchedState.imphalwest) + parseInt(fetchedState.imphaleast) + parseInt(fetchedState.noney)
 
-    const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.northgaro) + parseInt(fetchedState.westgaro)
+    const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.northgaro) + parseInt(fetchedState.southwestgaro) + parseInt(fetchedState.westgaro) + parseInt(fetchedState.westkhasi)
 
     const mizoramTotal = parseInt(fetchedState.aizawl)
 
@@ -446,6 +446,16 @@ const Tabular = () => {
                         <TableBody>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Chandel
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.chandel}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.chandelactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.chandeldeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.chandelrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     Churachandpur
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.churachandpur}</TableCell>
@@ -521,6 +531,16 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    South West Garo Hills
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.southwestgaro}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.southwestgaroactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.southwestgarodeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.southwestgarorecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     West Garo Hills
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.westgaro}</TableCell>
@@ -528,6 +548,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.westgarodeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.westgarorecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    West Khasi Hills
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.westkhasi}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.westkhasiactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.westkhasideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.westkhasirecovered}</TableCell>
                             </TableRow>
                         </TableBody>
 
