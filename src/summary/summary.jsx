@@ -16,9 +16,24 @@ const Summary = () => {
     };
     fetchAPIState();
   }, []);
-  const arunachalActive = parseInt(fetchedState.lohitactive);
-  const arunachalRecovered = parseInt(fetchedState.lohitrecovered);
-  const arunachalDeaths = parseInt(fetchedState.lohitdeceased);
+  const arunachalActive =
+    parseInt(fetchedState.changlangactive) +
+    parseInt(fetchedState.lohitactive) +
+    parseInt(fetchedState.namsaiactive) +
+    parseInt(fetchedState.papumactive) +
+    parseInt(fetchedState.tawangactive);
+  const arunachalRecovered =
+    parseInt(fetchedState.changlangrecovered) +
+    parseInt(fetchedState.lohitrecovered) +
+    parseInt(fetchedState.namsairecovered) +
+    parseInt(fetchedState.papumrecovered) +
+    parseInt(fetchedState.tawangrecovered);
+  const arunachalDeaths =
+    parseInt(fetchedState.changlangdeceased) +
+    parseInt(fetchedState.lohitdeceased) +
+    parseInt(fetchedState.namsaideceased) +
+    parseInt(fetchedState.papumdeceased) +
+    parseInt(fetchedState.tawangdeceased);
   const assamActive =
     parseInt(fetchedState.baksaactive) +
     parseInt(fetchedState.barpetaactive) +

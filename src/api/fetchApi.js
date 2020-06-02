@@ -20,10 +20,26 @@ export const fetchData = async () => {
 
         {
             //Arunachal
+            changlang: [response['Arunachal Pradesh']['districtData']['Changlang']['confirmed']],
+            changlangactive: [response['Arunachal Pradesh']['districtData']['Changlang']['active']],
+            changlangdeceased: [response['Arunachal Pradesh']['districtData']['Changlang']['deceased']],
+            changlangrecovered: [response['Arunachal Pradesh']['districtData']['Changlang']['recovered']],
             lohit: [response['Arunachal Pradesh']['districtData']['Lohit']['confirmed']],
             lohitactive: [response['Arunachal Pradesh']['districtData']['Lohit']['active']],
             lohitdeceased: [response['Arunachal Pradesh']['districtData']['Lohit']['deceased']],
             lohitrecovered: [response['Arunachal Pradesh']['districtData']['Lohit']['recovered']],
+            namsai: [response['Arunachal Pradesh']['districtData']['Namsai']['confirmed']],
+            namsaiactive: [response['Arunachal Pradesh']['districtData']['Namsai']['active']],
+            namsaideceased: [response['Arunachal Pradesh']['districtData']['Namsai']['deceased']],
+            namsairecovered: [response['Arunachal Pradesh']['districtData']['Namsai']['recovered']],
+            papum: [response['Arunachal Pradesh']['districtData']['Papum Pare']['confirmed']],
+            papumactive: [response['Arunachal Pradesh']['districtData']['Papum Pare']['active']],
+            papumdeceased: [response['Arunachal Pradesh']['districtData']['Papum Pare']['deceased']],
+            papumrecovered: [response['Arunachal Pradesh']['districtData']['Papum Pare']['recovered']],
+            tawang: [response['Arunachal Pradesh']['districtData']['Tawang']['confirmed']],
+            tawangactive: [response['Arunachal Pradesh']['districtData']['Tawang']['active']],
+            tawangdeceased: [response['Arunachal Pradesh']['districtData']['Tawang']['deceased']],
+            tawangrecovered: [response['Arunachal Pradesh']['districtData']['Tawang']['recovered']],
             //Assam
             baksa: [response['Assam']['districtData']['Baksa']['confirmed']],
             baksaactive: [response['Assam']['districtData']['Baksa']['active']],

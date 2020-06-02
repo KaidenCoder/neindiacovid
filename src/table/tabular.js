@@ -21,7 +21,8 @@ const Tabular = () => {
         }
         fetchAPIState()
     }, [])
-    const arunachalTotal = parseInt(fetchedState.lohit)
+    const arunachalTotal = parseInt(fetchedState.changlang) + parseInt(fetchedState.lohit) + parseInt(fetchedState.namsai)
+        + parseInt(fetchedState.papum) + parseInt(fetchedState.tawang)
 
     const assamTotal = parseInt(fetchedState.baksa) + parseInt(fetchedState.barpeta) + parseInt(fetchedState.biswanath) + parseInt(fetchedState.bongaigaon) + parseInt(fetchedState.cachar)
         + parseInt(fetchedState.charaideo) + parseInt(fetchedState.chirang) + parseInt(fetchedState.darrang)
@@ -94,6 +95,16 @@ const Tabular = () => {
                         <TableBody>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Changlang
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.changlang}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.changlangactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.changlangdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.changlangrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     Lohit
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.lohit}</TableCell>
@@ -101,6 +112,36 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.lohitdeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.lohitrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Namsai
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.namsai}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.namsaiactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.namsaideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.namsairecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Papum Pare
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.papum}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.papumactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.papumdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.papumrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Tawang
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.tawang}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.tawangactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.tawangdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.tawangrecovered}</TableCell>
                             </TableRow>
                         </TableBody>
 
