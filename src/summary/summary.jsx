@@ -20,20 +20,26 @@ const Summary = () => {
     parseInt(fetchedState.changlangactive) +
     parseInt(fetchedState.lohitactive) +
     parseInt(fetchedState.namsaiactive) +
+    parseInt(fetchedState.pakkeactive) +
     parseInt(fetchedState.papumactive) +
-    parseInt(fetchedState.tawangactive);
+    parseInt(fetchedState.tawangactive) +
+    parseInt(fetchedState.uppersiangactive);
   const arunachalRecovered =
     parseInt(fetchedState.changlangrecovered) +
     parseInt(fetchedState.lohitrecovered) +
     parseInt(fetchedState.namsairecovered) +
+    parseInt(fetchedState.pakkerecovered) +
     parseInt(fetchedState.papumrecovered) +
-    parseInt(fetchedState.tawangrecovered);
+    parseInt(fetchedState.tawangrecovered) +
+    parseInt(fetchedState.uppersiangrecovered);
   const arunachalDeaths =
     parseInt(fetchedState.changlangdeceased) +
     parseInt(fetchedState.lohitdeceased) +
     parseInt(fetchedState.namsaideceased) +
+    parseInt(fetchedState.pakkedeceased) +
     parseInt(fetchedState.papumdeceased) +
-    parseInt(fetchedState.tawangdeceased);
+    parseInt(fetchedState.tawangdeceased) +
+    parseInt(fetchedState.uppersiangdeceased);
   const assamActive =
     parseInt(fetchedState.baksaactive) +
     parseInt(fetchedState.barpetaactive) +
@@ -138,9 +144,14 @@ const Summary = () => {
     parseInt(fetchedState.chandelactive) +
     parseInt(fetchedState.churachandpuractive) +
     parseInt(fetchedState.imphalwestactive) +
+    parseInt(fetchedState.kakchingactive) +
+    parseInt(fetchedState.kamjongactive) +
+    parseInt(fetchedState.kangpokpiactive) +
     parseInt(fetchedState.noneyactive) +
     parseInt(fetchedState.imphaleastactive) +
     parseInt(fetchedState.senapatiactive) +
+    parseInt(fetchedState.tamenglongactive) +
+    parseInt(fetchedState.tengnoupalactive) +
     parseInt(fetchedState.thoubalactive) +
     parseInt(fetchedState.ukhrulactive);
   const manipurRecovered =
@@ -148,9 +159,14 @@ const Summary = () => {
     parseInt(fetchedState.chandelrecovered) +
     parseInt(fetchedState.churachandpurrecovered) +
     parseInt(fetchedState.imphalwestrecovered) +
+    parseInt(fetchedState.kakchingrecovered) +
+    parseInt(fetchedState.kamjongrecovered) +
+    parseInt(fetchedState.kangpokpirecovered) +
     parseInt(fetchedState.noneyrecovered) +
     parseInt(fetchedState.imphaleastrecovered) +
     parseInt(fetchedState.senapatirecovered) +
+    parseInt(fetchedState.tamenglongrecovered) +
+    parseInt(fetchedState.tengnoupalrecovered) +
     parseInt(fetchedState.thoubalrecovered) +
     parseInt(fetchedState.ukhrulrecovered);
   const manipurDeaths =
@@ -158,9 +174,14 @@ const Summary = () => {
     parseInt(fetchedState.chandeldeceased) +
     parseInt(fetchedState.churachandpurdeceased) +
     parseInt(fetchedState.imphalwestdeceased) +
+    parseInt(fetchedState.kakchingdeceased) +
+    parseInt(fetchedState.kamjongdeceased) +
+    parseInt(fetchedState.kangpokpideceased) +
     parseInt(fetchedState.noneydeceased) +
     parseInt(fetchedState.imphaleastdeceased) +
     parseInt(fetchedState.senapatideceased) +
+    parseInt(fetchedState.tamenglongdeceased) +
+    parseInt(fetchedState.tengnoupaldeceased) +
     parseInt(fetchedState.thoubaldeceased) +
     parseInt(fetchedState.ukhruldeceased);
   const meghalayaActive =
@@ -168,22 +189,40 @@ const Summary = () => {
     parseInt(fetchedState.northgaroactive) +
     parseInt(fetchedState.southwestgaroactive) +
     parseInt(fetchedState.westgaroactive) +
+    parseInt(fetchedState.westjaintiaactive) +
     parseInt(fetchedState.westkhasiactive);
   const meghalayaRecovered =
     parseInt(fetchedState.eastkhasirecovered) +
     parseInt(fetchedState.northgarorecovered) +
     parseInt(fetchedState.southwestgarorecovered) +
     parseInt(fetchedState.westgarorecovered) +
+    parseInt(fetchedState.westjaintiarecovered) +
     parseInt(fetchedState.westkhasirecovered);
   const meghalayaDeaths =
     parseInt(fetchedState.eastkhasideceased) +
     parseInt(fetchedState.northgarodeceased) +
     parseInt(fetchedState.southwestgarodeceased) +
     parseInt(fetchedState.westgarodeceased) +
+    parseInt(fetchedState.westjaintiadeceased) +
     parseInt(fetchedState.westkhasideceased);
-  const mizoramActive = parseInt(fetchedState.aizawlactive);
-  const mizoramRecovered = parseInt(fetchedState.aizawlrecovered);
-  const mizoramDeaths = parseInt(fetchedState.aizawldeceased);
+  const mizoramActive =
+    parseInt(fetchedState.aizawlactive) +
+    parseInt(fetchedState.lungleiactive) +
+    parseInt(fetchedState.mamitactive) +
+    parseInt(fetchedState.saitualactive) +
+    parseInt(fetchedState.serchhipactive);
+  const mizoramRecovered =
+    parseInt(fetchedState.aizawlrecovered) +
+    parseInt(fetchedState.lungleirecovered) +
+    parseInt(fetchedState.mamitrecovered) +
+    parseInt(fetchedState.saitualrecovered) +
+    parseInt(fetchedState.serchhiprecovered);
+  const mizoramDeaths =
+    parseInt(fetchedState.aizawldeceased) +
+    parseInt(fetchedState.lungleideceased) +
+    parseInt(fetchedState.mamitdeceased) +
+    parseInt(fetchedState.saitualdeceased) +
+    parseInt(fetchedState.serchhipdeceased);
   const nagalandActive =
     parseInt(fetchedState.dimapuractive) +
     parseInt(fetchedState.kohimaactive) +
@@ -196,9 +235,15 @@ const Summary = () => {
     parseInt(fetchedState.dimapurdeceased) +
     parseInt(fetchedState.kohimadeceased) +
     parseInt(fetchedState.tuensangdeceased);
-  const sikkimActive = parseInt(fetchedState.southsikkimactive);
-  const sikkimRecovered = parseInt(fetchedState.southsikkimrecovered);
-  const sikkimDeaths = parseInt(fetchedState.southsikkimdeceased);
+  const sikkimActive =
+    parseInt(fetchedState.eastsikkimactive) +
+    parseInt(fetchedState.southsikkimactive);
+  const sikkimRecovered =
+    parseInt(fetchedState.eastsikkimrecovered) +
+    parseInt(fetchedState.southsikkimrecovered);
+  const sikkimDeaths =
+    parseInt(fetchedState.eastsikkimdeceased) +
+    parseInt(fetchedState.southsikkimdeceased);
   const tripuraActive =
     parseInt(fetchedState.dhalaiactive) +
     parseInt(fetchedState.gomatiactive) +
