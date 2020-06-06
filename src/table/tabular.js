@@ -23,6 +23,7 @@ const Tabular = () => {
     }, [])
     const arunachalTotal = parseInt(fetchedState.changlang) + parseInt(fetchedState.lohit) + parseInt(fetchedState.namsai)
         + parseInt(fetchedState.pakke) + parseInt(fetchedState.papum) + parseInt(fetchedState.tawang) + parseInt(fetchedState.uppersiang)
+        + parseInt(fetchedState.westsiang)
 
     const assamTotal = parseInt(fetchedState.baksa) + parseInt(fetchedState.barpeta) + parseInt(fetchedState.biswanath) + parseInt(fetchedState.bongaigaon) + parseInt(fetchedState.cachar)
         + parseInt(fetchedState.charaideo) + parseInt(fetchedState.chirang) + parseInt(fetchedState.darrang)
@@ -35,14 +36,14 @@ const Tabular = () => {
 
     const manipurTotal = parseInt(fetchedState.bishnupur) + parseInt(fetchedState.chandel) + parseInt(fetchedState.churachandpur) + parseInt(fetchedState.imphalwest)
         + parseInt(fetchedState.imphaleast) + parseInt(fetchedState.kakching) + parseInt(fetchedState.kamjong) + parseInt(fetchedState.kangpokpi) + parseInt(fetchedState.noney)
-        + parseInt(fetchedState.senapati) + parseInt(fetchedState.tamenglong) + parseInt(fetchedState.tengnoupal) + parseInt(fetchedState.thoubal) + parseInt(fetchedState.ukhrul)
+        + parseInt(fetchedState.pherzawl) + parseInt(fetchedState.senapati) + parseInt(fetchedState.tamenglong) + parseInt(fetchedState.tengnoupal) + parseInt(fetchedState.thoubal) + parseInt(fetchedState.ukhrul)
 
     const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.northgaro) + parseInt(fetchedState.southwestgaro)
         + parseInt(fetchedState.westgaro) + parseInt(fetchedState.westjaintia) + parseInt(fetchedState.westkhasi)
 
     const mizoramTotal = parseInt(fetchedState.aizawl) + parseInt(fetchedState.lunglei) + parseInt(fetchedState.mamit) + parseInt(fetchedState.saitual) + parseInt(fetchedState.serchhip)
 
-    const nagalandTotal = parseInt(fetchedState.dimapur) + parseInt(fetchedState.kohima) + parseInt(fetchedState.tuensang)
+    const nagalandTotal = parseInt(fetchedState.dimapur) + parseInt(fetchedState.kohima) + parseInt(fetchedState.peren) + parseInt(fetchedState.tuensang)
     const sikkimTotal = parseInt(fetchedState.eastsikkim) + parseInt(fetchedState.southsikkim)
 
     const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati)
@@ -164,6 +165,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.uppersiangdeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.uppersiangrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    West Siang
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.westsiang}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.westsiangactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.westsiangdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.westsiangrecovered}</TableCell>
                             </TableRow>
                         </TableBody>
 
@@ -610,6 +621,16 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Pherzawl
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.pherzawl}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.pherzawlactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.pherzawldeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.pherzawlrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     Senapati
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.senapati}</TableCell>
@@ -832,6 +853,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.kohimadeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.kohimarecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Peren
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.peren}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.perenactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.perendeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.perenrecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">

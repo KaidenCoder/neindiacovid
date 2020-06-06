@@ -23,7 +23,8 @@ const Summary = () => {
     parseInt(fetchedState.pakkeactive) +
     parseInt(fetchedState.papumactive) +
     parseInt(fetchedState.tawangactive) +
-    parseInt(fetchedState.uppersiangactive);
+    parseInt(fetchedState.uppersiangactive) +
+    parseInt(fetchedState.westsiangactive);
   const arunachalRecovered =
     parseInt(fetchedState.changlangrecovered) +
     parseInt(fetchedState.lohitrecovered) +
@@ -31,7 +32,8 @@ const Summary = () => {
     parseInt(fetchedState.pakkerecovered) +
     parseInt(fetchedState.papumrecovered) +
     parseInt(fetchedState.tawangrecovered) +
-    parseInt(fetchedState.uppersiangrecovered);
+    parseInt(fetchedState.uppersiangrecovered) +
+    parseInt(fetchedState.westsiangrecovered);
   const arunachalDeaths =
     parseInt(fetchedState.changlangdeceased) +
     parseInt(fetchedState.lohitdeceased) +
@@ -39,7 +41,8 @@ const Summary = () => {
     parseInt(fetchedState.pakkedeceased) +
     parseInt(fetchedState.papumdeceased) +
     parseInt(fetchedState.tawangdeceased) +
-    parseInt(fetchedState.uppersiangdeceased);
+    parseInt(fetchedState.uppersiangdeceased) +
+    parseInt(fetchedState.westsiangdeceased);
   const assamActive =
     parseInt(fetchedState.baksaactive) +
     parseInt(fetchedState.barpetaactive) +
@@ -148,6 +151,7 @@ const Summary = () => {
     parseInt(fetchedState.kamjongactive) +
     parseInt(fetchedState.kangpokpiactive) +
     parseInt(fetchedState.noneyactive) +
+    parseInt(fetchedState.pherzawlactive) +
     parseInt(fetchedState.imphaleastactive) +
     parseInt(fetchedState.senapatiactive) +
     parseInt(fetchedState.tamenglongactive) +
@@ -163,6 +167,7 @@ const Summary = () => {
     parseInt(fetchedState.kamjongrecovered) +
     parseInt(fetchedState.kangpokpirecovered) +
     parseInt(fetchedState.noneyrecovered) +
+    parseInt(fetchedState.pherzawlrecovered) +
     parseInt(fetchedState.imphaleastrecovered) +
     parseInt(fetchedState.senapatirecovered) +
     parseInt(fetchedState.tamenglongrecovered) +
@@ -178,6 +183,7 @@ const Summary = () => {
     parseInt(fetchedState.kamjongdeceased) +
     parseInt(fetchedState.kangpokpideceased) +
     parseInt(fetchedState.noneydeceased) +
+    parseInt(fetchedState.pherzawldeceased) +
     parseInt(fetchedState.imphaleastdeceased) +
     parseInt(fetchedState.senapatideceased) +
     parseInt(fetchedState.tamenglongdeceased) +
@@ -226,14 +232,17 @@ const Summary = () => {
   const nagalandActive =
     parseInt(fetchedState.dimapuractive) +
     parseInt(fetchedState.kohimaactive) +
+    parseInt(fetchedState.perenactive) +
     parseInt(fetchedState.tuensangactive);
   const nagalandRecovered =
     parseInt(fetchedState.dimapurrecovered) +
     parseInt(fetchedState.kohimarecovered) +
+    parseInt(fetchedState.perenrecovered) +
     parseInt(fetchedState.tuensangrecovered);
   const nagalandDeaths =
     parseInt(fetchedState.dimapurdeceased) +
     parseInt(fetchedState.kohimadeceased) +
+    parseInt(fetchedState.perendeceased) +
     parseInt(fetchedState.tuensangdeceased);
   const sikkimActive =
     parseInt(fetchedState.eastsikkimactive) +
