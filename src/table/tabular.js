@@ -21,7 +21,7 @@ const Tabular = () => {
         }
         fetchAPIState()
     }, [])
-    const arunachalTotal = parseInt(fetchedState.changlang) + parseInt(fetchedState.lohit) + parseInt(fetchedState.namsai)
+    const arunachalTotal = parseInt(fetchedState.changlang) + parseInt(fetchedState.eastsiang) + parseInt(fetchedState.lohit) + parseInt(fetchedState.namsai)
         + parseInt(fetchedState.pakke) + parseInt(fetchedState.papum) + parseInt(fetchedState.tawang) + parseInt(fetchedState.uppersiang)
         + parseInt(fetchedState.westsiang)
 
@@ -30,7 +30,7 @@ const Tabular = () => {
         + parseInt(fetchedState.dhubri) + parseInt(fetchedState.dima) + parseInt(fetchedState.dibrugarh)
         + parseInt(fetchedState.goalpara) + parseInt(fetchedState.golaghat) + parseInt(fetchedState.hailakandi) + parseInt(fetchedState.hojai) + parseInt(fetchedState.jorhat)
         + parseInt(fetchedState.kamrup) + parseInt(fetchedState.karbianglong) + parseInt(fetchedState.karimganj) + parseInt(fetchedState.kamrupmetro) + parseInt(fetchedState.kokrajhar) +
-        + parseInt(fetchedState.lakhimpur) + parseInt(fetchedState.morigaon) + parseInt(fetchedState.nagaon) + parseInt(fetchedState.nalbari)
+        + parseInt(fetchedState.lakhimpur) + parseInt(fetchedState.majuli) + parseInt(fetchedState.morigaon) + parseInt(fetchedState.nagaon) + parseInt(fetchedState.nalbari)
         + parseInt(fetchedState.salmara) + parseInt(fetchedState.sivasagar) + parseInt(fetchedState.sonitpur) + parseInt(fetchedState.tinsukia)
         + parseInt(fetchedState.udalguri) + parseInt(fetchedState.westkarbi) + parseInt(fetchedState.unknownassam)
 
@@ -41,9 +41,11 @@ const Tabular = () => {
     const meghalayaTotal = parseInt(fetchedState.eastkhasi) + parseInt(fetchedState.northgaro) + parseInt(fetchedState.southwestgaro)
         + parseInt(fetchedState.westgaro) + parseInt(fetchedState.westjaintia) + parseInt(fetchedState.westkhasi)
 
-    const mizoramTotal = parseInt(fetchedState.aizawl) + parseInt(fetchedState.lunglei) + parseInt(fetchedState.mamit) + parseInt(fetchedState.saitual) + parseInt(fetchedState.serchhip)
+    const mizoramTotal = parseInt(fetchedState.aizawl) + parseInt(fetchedState.lawngtlai) + parseInt(fetchedState.lunglei) + parseInt(fetchedState.mamit)
+        + parseInt(fetchedState.saitual) + parseInt(fetchedState.serchhip)
 
-    const nagalandTotal = parseInt(fetchedState.dimapur) + parseInt(fetchedState.kohima) + parseInt(fetchedState.peren) + parseInt(fetchedState.tuensang)
+    const nagalandTotal = parseInt(fetchedState.dimapur) + parseInt(fetchedState.kiphire) + parseInt(fetchedState.kohima) + parseInt(fetchedState.mon) + parseInt(fetchedState.peren)
+        + parseInt(fetchedState.phek) + parseInt(fetchedState.tuensang) + parseInt(fetchedState.wokha)
     const sikkimTotal = parseInt(fetchedState.eastsikkim) + parseInt(fetchedState.southsikkim)
 
     const tripuraTotal = parseInt(fetchedState.dhalai) + parseInt(fetchedState.gomati)
@@ -105,6 +107,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.changlangdeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.changlangrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    East Siang
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.eastsiang}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.eastsiangactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.eastsiangdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.eastsiangrecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
@@ -413,6 +425,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.lakhimpurdeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.lakhimpurrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Majuli
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.majuli}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.majuliactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.majulideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.majulirecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
@@ -781,6 +803,16 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Lawngtlai
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.lawngtlai}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.lawngtlaiactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.lawngtlaideceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.lawngtlairecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     Lunglei
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.lunglei}</TableCell>
@@ -846,6 +878,16 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Kiphire
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.kiphire}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.kiphireactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.kiphiredeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.kiphirerecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     Kohima
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.kohima}</TableCell>
@@ -853,6 +895,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.kohimadeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.kohimarecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Mon
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.mon}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.monactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.mondeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.monrecovered}</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
@@ -866,6 +918,16 @@ const Tabular = () => {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Phek
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.phek}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.phekactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.phekdeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.phekrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     Tuensang
                                 </TableCell>
                                 <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.tuensang}</TableCell>
@@ -873,6 +935,16 @@ const Tabular = () => {
 
                                 <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.tuensangdeceased}</TableCell>
                                 <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.tuensangrecovered}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    Wokha
+                                </TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{fetchedState.wokha}</TableCell>
+                                <TableCell style={{ background: 'rgba(199, 231, 237, 0.5)' }} align="right">{fetchedState.wokhaactive}</TableCell>
+
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{fetchedState.wokhadeceased}</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{fetchedState.wokharecovered}</TableCell>
                             </TableRow>
                         </TableBody>
                         {/* SIKKIM */}

@@ -18,6 +18,7 @@ const Summary = () => {
   }, []);
   const arunachalActive =
     parseInt(fetchedState.changlangactive) +
+    parseInt(fetchedState.eastsiangactive) +
     parseInt(fetchedState.lohitactive) +
     parseInt(fetchedState.namsaiactive) +
     parseInt(fetchedState.pakkeactive) +
@@ -27,6 +28,7 @@ const Summary = () => {
     parseInt(fetchedState.westsiangactive);
   const arunachalRecovered =
     parseInt(fetchedState.changlangrecovered) +
+    parseInt(fetchedState.eastsiangrecovered) +
     parseInt(fetchedState.lohitrecovered) +
     parseInt(fetchedState.namsairecovered) +
     parseInt(fetchedState.pakkerecovered) +
@@ -36,6 +38,7 @@ const Summary = () => {
     parseInt(fetchedState.westsiangrecovered);
   const arunachalDeaths =
     parseInt(fetchedState.changlangdeceased) +
+    parseInt(fetchedState.eastsiangdeceased) +
     parseInt(fetchedState.lohitdeceased) +
     parseInt(fetchedState.namsaideceased) +
     parseInt(fetchedState.pakkedeceased) +
@@ -66,6 +69,7 @@ const Summary = () => {
     parseInt(fetchedState.karimganjactive) +
     parseInt(fetchedState.kokrajharactive) +
     parseInt(fetchedState.lakhimpuractive) +
+    parseInt(fetchedState.majuliactive) +
     parseInt(fetchedState.morigaonactive) +
     parseInt(fetchedState.nagaonactive) +
     parseInt(fetchedState.nalbariactive) +
@@ -99,6 +103,7 @@ const Summary = () => {
     parseInt(fetchedState.karimganjrecovered) +
     parseInt(fetchedState.kokrajharrecovered) +
     parseInt(fetchedState.lakhimpurrecovered) +
+    parseInt(fetchedState.majulirecovered) +
     parseInt(fetchedState.morigaonrecovered) +
     parseInt(fetchedState.nagaonrecovered) +
     parseInt(fetchedState.nalbarirecovered) +
@@ -132,6 +137,7 @@ const Summary = () => {
     parseInt(fetchedState.karimganjdeceased) +
     parseInt(fetchedState.kokrajhardeceased) +
     parseInt(fetchedState.lakhimpurdeceased) +
+    parseInt(fetchedState.majulideceased) +
     parseInt(fetchedState.morigaondeceased) +
     parseInt(fetchedState.nagaondeceased) +
     parseInt(fetchedState.nalbarideceased) +
@@ -213,37 +219,52 @@ const Summary = () => {
     parseInt(fetchedState.westkhasideceased);
   const mizoramActive =
     parseInt(fetchedState.aizawlactive) +
+    parseInt(fetchedState.lawngtlaiactive) +
     parseInt(fetchedState.lungleiactive) +
     parseInt(fetchedState.mamitactive) +
     parseInt(fetchedState.saitualactive) +
     parseInt(fetchedState.serchhipactive);
   const mizoramRecovered =
     parseInt(fetchedState.aizawlrecovered) +
+    parseInt(fetchedState.lawngtlairecovered) +
     parseInt(fetchedState.lungleirecovered) +
     parseInt(fetchedState.mamitrecovered) +
     parseInt(fetchedState.saitualrecovered) +
     parseInt(fetchedState.serchhiprecovered);
   const mizoramDeaths =
     parseInt(fetchedState.aizawldeceased) +
+    parseInt(fetchedState.lawngtlaideceased) +
     parseInt(fetchedState.lungleideceased) +
     parseInt(fetchedState.mamitdeceased) +
     parseInt(fetchedState.saitualdeceased) +
     parseInt(fetchedState.serchhipdeceased);
   const nagalandActive =
     parseInt(fetchedState.dimapuractive) +
+    parseInt(fetchedState.kiphireactive) +
     parseInt(fetchedState.kohimaactive) +
+    parseInt(fetchedState.monactive) +
     parseInt(fetchedState.perenactive) +
-    parseInt(fetchedState.tuensangactive);
+    parseInt(fetchedState.phekactive) +
+    parseInt(fetchedState.tuensangactive) +
+    parseInt(fetchedState.wokhaactive);
   const nagalandRecovered =
     parseInt(fetchedState.dimapurrecovered) +
+    parseInt(fetchedState.kiphirerecovered) +
     parseInt(fetchedState.kohimarecovered) +
+    parseInt(fetchedState.monrecovered) +
     parseInt(fetchedState.perenrecovered) +
-    parseInt(fetchedState.tuensangrecovered);
+    parseInt(fetchedState.phekrecovered) +
+    parseInt(fetchedState.tuensangrecovered) +
+    parseInt(fetchedState.wokharecovered);
   const nagalandDeaths =
     parseInt(fetchedState.dimapurdeceased) +
+    parseInt(fetchedState.kiphiredeceased) +
     parseInt(fetchedState.kohimadeceased) +
+    parseInt(fetchedState.mondeceased) +
     parseInt(fetchedState.perendeceased) +
-    parseInt(fetchedState.tuensangdeceased);
+    parseInt(fetchedState.phekdeceased) +
+    parseInt(fetchedState.tuensangdeceased) +
+    parseInt(fetchedState.wokhadeceased);
   const sikkimActive =
     parseInt(fetchedState.eastsikkimactive) +
     parseInt(fetchedState.southsikkimactive);
