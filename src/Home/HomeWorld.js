@@ -4,7 +4,7 @@ import styles from '../App.module.css'
 import CoronaImage from '../images/image.png'
 import { fetchData } from '../covidWorld/apiWorld/fetchApi'
 import Cards from '../covidWorld/Components/Cards/Cards';
-import NewCards from '../covidWorld/Components/Cards/NewCards';
+
 
 class HomeWorld extends React.Component {
 
