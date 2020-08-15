@@ -12,7 +12,7 @@ const Summary = () => {
     const fetchAPIState = async () => {
       const dailyData = await fetchData();
       setFetchedState(dailyData);
-      //console.log(dailyData)
+      //console.log(dailyData);
     };
     fetchAPIState();
   }, []);

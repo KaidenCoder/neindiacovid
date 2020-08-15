@@ -4,7 +4,7 @@ export const fetchDistricts = async () => {
     try {
         const response = await (await fetch(url)).json();
         const modifiedData = {
-            arunachal: [response['Arunachal Pradesh']]
+            arunachal: [response['Arunachal Pradesh']['districtData']]
         }
         return modifiedData
     } catch (error) {
