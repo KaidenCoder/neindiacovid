@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav mx-auto">
                     <NavLink className="nav-link" exact to="/"><h5>INDIA</h5></NavLink>
-                    <NavLink className="nav-link" exact to="/neIndia"><h5>NORTH EAST</h5></NavLink>
+
                     <NavLink className="nav-link" exact to="/world"><h5>WORLD</h5></NavLink>
 
                 </div>

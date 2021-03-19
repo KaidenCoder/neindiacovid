@@ -23,7 +23,7 @@ const App = () => {
 
       <br />
       <Route exact path='/' component={HomeIndia} />
-      <Route exact path='/neIndia' component={Home} />
+
       <Route exact path='/world' component={HomeWorld} />
 
     </Router>
