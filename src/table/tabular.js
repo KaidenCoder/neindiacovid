@@ -17,7 +17,7 @@ const Tabular = () => {
         const fetchAPIState = async () => {
             const dailyData = await fetchData()
             setFetchedState(dailyData)
-            //console.log(dailyData)
+            // console.log(dailyData)
         }
         fetchAPIState()
     }, [])
@@ -61,7 +61,6 @@ const Tabular = () => {
     return (
 
         <>
-
             <div className="container">
                 <div className="card" style={{}}>
                     <div className="card-header" style={{ background: 'rgba(255, 241, 194, 0.5)' }}>
@@ -73,7 +72,7 @@ const Tabular = () => {
                         <h5 className="card-text text-center">{total || "Loading..."}</h5>
                         <br></br>
                         {/* <h6 style={{ textAlign: 'center' }} > <button type="button" className="btn btn-light"><span style={{ color: 'rgb(0,0,0,0.4)' }}>Check Total India Cases</span><a href="https://covidindiastats.netlify.app/"> (Link)</a></button></h6> */}
-                        <p className="text-center"><a href="https://covidindiastats.netlify.app/" className="btn btn-primary ">Read More</a></p>
+                        {/* <p className="text-center"><a href="https://covidindiastats.netlify.app/" className="btn btn-primary ">Read More</a></p> */}
                     </div>
                     <div className="card-header" style={{ background: 'rgba(255, 241, 194, 0.5)' }}>
 
@@ -1078,6 +1077,7 @@ const Tabular = () => {
                     </Table>
                 </TableContainer>
             </div>
+
         </>
     )
 

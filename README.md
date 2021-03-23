@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project Info
+
 This project contains all the node modules so you just need to clone and run the project.
 The api is taken from [POSTMAN](https://postman.com)
 
@@ -11,7 +12,8 @@ In the project directory, you can run:
 ### `npm start` || `yarn start`
 
 ### Project Image
-![](src/images/image1.png)
+
+![](src/images/image2.png)
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
